@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/libs/activation.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/activation_5fba578395903c2ce235920f11519d707e895f64.jar" />
+    </item>
+    <item
+        jar="/Developer/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_156b304c08f81a9f9592e40bffa7ab2ed22c465b.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0d7ee86c58ab4643468e187ae7ae4135b4794692">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_4091bb448c8374806c1ab8c24f503cbbde062776.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/libs/additionnal.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/additionnal_988bfb25606efcf895556bd91195d7bae81932c3.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_00c4d715f925bf7bcb28be1e8d8e7153681a12e0.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/libs/mpandroidchartlibrary-2-1-0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e8e579486323fc12433aca39b93329498a3bbc2d">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/mpandroidchartlibrary-2-1-0_ba2eafe140eb11f84053fbb2620fc4c8ba4e3a5e.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_9989038f678b876931f4504720187d66db448299.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/libs/mail.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/mail_9edde3c721ebce0c87a4da8cf9f2476540575b84.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3fa86d68a58eab8ff3d26050d921ee787f7972a4">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/instant-run_a78bcae5bb7fb1b1ea2167c968a337fffc482b4b.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_60f892efc2223383c2ec38d0fbcd48118b6d62c2.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_10a16d17d48737cc2430a35aed337269418ef36e.jar" />
+    </item>
+    <item
+        jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_144f3ad0acb1ad8afae71a16f6c15e66c28b9537.jar" />
+    </item>
+
+</items>

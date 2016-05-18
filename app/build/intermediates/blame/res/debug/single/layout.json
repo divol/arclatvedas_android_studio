@@ -1,0 +1,274 @@
+[
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_volee_graph.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_volee_graph.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_materiel_edit.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_materiel_edit.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/distance_edit_row_grid.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/distance_edit_row_grid.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/distance_row_grid.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/distance_row_grid.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/arrow_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/arrow_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_distance_edit.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_distance_edit.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_circleview_old.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_circleview_old.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_page_detail.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_page_detail.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_tir.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_tir.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_circleview.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_circleview.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_materiel_list2.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_materiel_list2.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/tir_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/tir_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/charte_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/charte_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_distance.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_distance.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/volee_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/volee_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_charte.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_charte.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/distance_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/distance_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_arrow.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_arrow.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_tir_edit.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_tir_edit.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_page_detail.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_page_detail.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_materiel_list2.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_materiel_list2.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_page_twopane.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_page_twopane.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/materiel_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/materiel_row_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_materiel.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_materiel.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_graph.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_graph.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_page_list.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_page_list.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_volee_edit.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_volee_edit.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_arrow_edit.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_arrow_edit.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_charte.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_charte.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/activity_tir_edit_dialog.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_tir_edit_dialog.xml"
+    }
+]

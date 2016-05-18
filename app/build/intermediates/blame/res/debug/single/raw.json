@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/easton3.alvgroupe",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/easton3.alvgroupe"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/ce3.alvgroupe",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/ce3.alvgroupe"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/charte.sql",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/charte.sql"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/ce2.alvfleche",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/ce2.alvfleche"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/easton1.alvcharte",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/easton1.alvcharte"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/ce1.alvcharte",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/ce1.alvcharte"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/easton2.alvfleche",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/easton2.alvfleche"
+    }
+]
