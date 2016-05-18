@@ -68,7 +68,7 @@ public class TirSQLiteOpenHelper {
 	}
 
 	public static void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		    // 13 premiere version playstore, gestion meilleur de l'evolution du schemat, avant ... désolé 
+		    // 13 premiere version playstore, gestion meilleur de l'evolution du schemat, avant ... d√©sol√©
 		    if (oldVersion == 13){
 		    	// ajout du champ "blason" en v. 14
 				//TODO migration vers une nouvelle table avec des nouvelles colonnes

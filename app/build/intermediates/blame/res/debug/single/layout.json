@@ -200,12 +200,12 @@
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/activity_page_twopane.xml"
     },
     {
-        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/materiel_row_layout.xml",
-        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/materiel_row_layout.xml"
-    },
-    {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/fragment_materiel.xml",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/fragment_materiel.xml"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/materiel_row_layout.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/layout/materiel_row_layout.xml"
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",

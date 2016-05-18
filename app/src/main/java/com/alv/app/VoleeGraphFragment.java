@@ -73,7 +73,7 @@ public class VoleeGraphFragment extends Fragment implements OnClickListener {
 				
 		LineChart chart = (LineChart) baseview.findViewById(R.id.chart);
 		
-	    LineDataSet setComp1 = new LineDataSet(vals, "Volées");
+	    LineDataSet setComp1 = new LineDataSet(vals, "Vol√©es");
 	    
 	    ArrayList<LineDataSet> dataSets = new ArrayList<LineDataSet>();
 	    dataSets.add(setComp1);

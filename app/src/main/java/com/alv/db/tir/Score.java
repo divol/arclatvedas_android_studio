@@ -31,9 +31,9 @@ public class Score implements Parcelable{
     (1,0) = milieu;
     (2,0) = bas;
     
-    la seconde coordonnée pourrait être utilisée pour la position de l'archer (A =0, B=1, C=2, D=3, ....)
+    la seconde coordonn√©e pourrait √™tre utilis√©e pour la position de l'archer (A =0, B=1, C=2, D=3, ....)
 	
-	(0,0) coordonnée zone haut pour l'archer en A
+	(0,0) coordonn√©e zone haut pour l'archer en A
 	
 	*/
 	public long getId() {

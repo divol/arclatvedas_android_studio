@@ -313,7 +313,7 @@ public class VoleeEditFragment extends Fragment implements OnClickListener {
 		DialogFragment dialog = new YesNoDialog();
 		Bundle args = new Bundle();
 		args.putString("title", "Attention");
-		args.putString("message", "Voulez-vous effacer cette volée ?");
+		args.putString("message", "Voulez-vous effacer cette vol√©e ?");
 		dialog.setArguments(args);
 		dialog.setTargetFragment(this, EFFACEVOLEE);
 		dialog.show(getFragmentManager(), "tag");

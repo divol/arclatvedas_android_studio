@@ -37,7 +37,7 @@ public class Fleche implements Parcelable{
 	@Override
     public String toString(){
     	
-    	String str ="Modèle: "+modele;
+    	String str ="Mod√®le: "+modele;
     	str +="\nNom: "+name;
     	str +=" Spin: "+spin;
     	str +="\nTaille: "+taille;

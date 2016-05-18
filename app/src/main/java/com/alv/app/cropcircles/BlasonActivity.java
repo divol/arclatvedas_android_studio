@@ -11,8 +11,6 @@ import com.alv.db.tir.Score;
 import com.alv.db.tir.Tir;
 import com.alv.db.tir.TirDataSource;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Point;
 import android.graphics.PointF;
@@ -26,11 +24,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
+
 
 ///ref : http://stackoverflow.com/questions/13864480/android-how-to-circular-zoom-magnify-part-of-image
 
 /// http://www.java2s.com/Code/Android/2D-Graphics/Drawacircle.htm
-public class BlasonActivity extends Activity  implements BlasonInterface,OnClickListener,ActionBar.OnNavigationListener {
+public class BlasonActivity extends AppCompatActivity  implements BlasonInterface,OnClickListener,ActionBar.OnNavigationListener {
 	AbstractBlasonView drawingImageView=null;
 	TirDataSource datasource;
 	Tir tir;
@@ -74,9 +75,11 @@ public class BlasonActivity extends Activity  implements BlasonInterface,OnClick
 
 		//action bar
 
-		final ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
 
+        final ActionBar actionbar = getSupportActionBar();
+        if(actionbar != null) {
+            actionbar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
+        }
 
 		total = (TextView)findViewById(R.id.totalBlason);
 		total.setText(""+ listAdapter.getTotal());
@@ -106,26 +109,26 @@ public class BlasonActivity extends Activity  implements BlasonInterface,OnClick
 		//		vectBlason.add(Blason.Beursault.toString());
 
 
+        if(actionbar != null) {
+            actionbar.setDisplayShowTitleEnabled(false);
+            actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
-		actionBar.setDisplayShowTitleEnabled(false);
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+            actionbar.setListNavigationCallbacks(
+                    new ArrayAdapter<String>(
+                            actionbar.getThemedContext(),
+                            android.R.layout.simple_list_item_1,
+                            android.R.id.text1,
+                            vectBlason), this);
 
-		actionBar.setListNavigationCallbacks(
-				new ArrayAdapter<String>(
-						actionBar.getThemedContext(),
-						android.R.layout.simple_list_item_1,
-						android.R.id.text1,
-						vectBlason), this);
+            int toto = (int) tir.getBlasonType();
+            if (toto >= vectBlason.size()) {
+                toto = 0; // ^^ for future use ...
+            }
+            System.out.println("getBlasonType = " + toto);
 
-		int toto  =(int) tir.getBlasonType();
-		if (toto >= vectBlason.size()) {
-			toto = 0; // ^^ for future use ...
-		}
-		System.out.println("getBlasonType = "+toto);
-		
-		buildBlason(toto);
-		actionBar.setSelectedNavigationItem(toto);
-
+            buildBlason(toto);
+            actionbar.setSelectedNavigationItem(toto);
+        }
 //		//drawingImageView
 //		LinearLayout layout = (LinearLayout) this.findViewById(R.id.conteneurview);
 //		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
@@ -338,7 +341,7 @@ public class BlasonActivity extends Activity  implements BlasonInterface,OnClick
 
 	public enum Blason{
 		FITA ("FITA",0) ,	
-		FITAReduce ("FITA rŽduit",1),
+		FITAReduce ("FITA rï¿½duit",1),
 		TriSpot ("TriSpot",2),
 		Campagne ("Campagne",3),
 		CampagneDouble ("Campagne double",4),
@@ -346,7 +349,7 @@ public class BlasonActivity extends Activity  implements BlasonInterface,OnClick
 		Beursault ("Beursault",6)
 		//		,Nature ("Nature",7),
 		//		ThreeD ("3D",8),
-		//		TriSpotVegas ("TriSpot VŽgas",9)
+		//		TriSpotVegas ("TriSpot Vï¿½gas",9)
 		;
 
 

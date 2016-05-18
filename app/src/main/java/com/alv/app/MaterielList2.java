@@ -2,33 +2,38 @@ package com.alv.app;
 
 import com.alv.app.R;
 
-import android.app.ActionBar;
+//import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-public class MaterielList2 extends FragmentActivity  {
+public class MaterielList2 extends AppCompatActivity  {
 
 	@Override
+
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		final ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
+       // assert getSupportActionBar() != null;
+        final ActionBar actionbar = getSupportActionBar();
+        if(actionbar != null) {
+            actionbar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
+        }
 		setContentView(R.layout.activity_materiel_list2);
 		if (savedInstanceState == null) {
-			
-			
-			
+
+
+
 			MaterielList2PlaceholderFragment fragment = new MaterielList2PlaceholderFragment();
-			
+
 			 getSupportFragmentManager().beginTransaction()
             .add(R.id.containerList2, fragment)
             .commit();
 
-	
+
 		}
 	}
 
@@ -51,7 +56,7 @@ public class MaterielList2 extends FragmentActivity  {
         }
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -59,7 +64,7 @@ public class MaterielList2 extends FragmentActivity  {
         	if (fragment.getClass().equals(MaterielEditFragment.class)){
         		fragment.onActivityResult(requestCode, resultCode, data);
         	}
-        	
+
         }
     }
 }

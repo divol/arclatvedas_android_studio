@@ -102,7 +102,7 @@ public class MaterielDataSource extends DataSourceBase<Materiel>{
 	  public  Materiel getTestValue(){
 	      
 		  Materiel arrow = new Materiel();
-	      arrow.setName("Poignée");
+	      arrow.setName("Poign√©e");
 	      arrow.setSerialNumber("SN/000000000000000000");
 	      arrow.setDateAchat("");
 	      arrow.setComment("");

@@ -5,8 +5,8 @@ import com.alv.lists.MaterielContent;
 import com.alv.app.R;
 
 import android.support.v4.app.Fragment;
-import android.app.ActionBar;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,11 +16,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
+
 /**
  * A placeholder fragment containing a simple view.
  */
 public class MaterielList2PlaceholderFragment extends Fragment implements
-ActionBar.OnNavigationListener {
+        android.support.v7.app.ActionBar.OnNavigationListener {
 
 	
 	/**
@@ -38,17 +41,16 @@ ActionBar.OnNavigationListener {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_materiel_list2,
 				container, false);
-		
-		
-		final ActionBar actionBar = getActivity().getActionBar();
-		
-		actionBar.setDisplayShowTitleEnabled(false);
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-		// Set up the action bar to show a dropdown list.
-		//actionBar.setDisplayShowTitleEnabled(false);
-		//actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+        ActionBar bar= ((AppCompatActivity)getActivity()).getSupportActionBar();
 
-		// Set up the dropdown list navigation in the action bar.
+		if (bar != null) {
+            bar.setDisplayShowTitleEnabled(false);
+            bar.setNavigationMode(bar.NAVIGATION_MODE_LIST);
+			// Set up the action bar to show a dropdown list.
+			//actionBar.setDisplayShowTitleEnabled(false);
+			//actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+
+			// Set up the dropdown list navigation in the action bar.
 		/*
 		actionBar.setListNavigationCallbacks(
 		// Specify a SpinnerAdapter to populate the dropdown list.
@@ -60,15 +62,15 @@ ActionBar.OnNavigationListener {
 								getString(R.string.title_section3), }), this);
 		
 		*/
-		actionBar.setListNavigationCallbacks(
-				new ArrayAdapter<String>(
-						 actionBar.getThemedContext(),
-			                android.R.layout.simple_list_item_1,
-			                android.R.id.text1,
-			                MaterielContent.MATERIEL_TYPES), this);
-		
-		 
-		
+            bar.setListNavigationCallbacks(
+					new ArrayAdapter<String>(
+                            bar.getThemedContext(),
+							android.R.layout.simple_list_item_1,
+							android.R.id.text1,
+							MaterielContent.MATERIEL_TYPES),  this);
+
+
+		}
 		 
 		return rootView;
 	}
@@ -121,8 +123,9 @@ ActionBar.OnNavigationListener {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// Restore the previously serialized current dropdown position.
 		if (savedInstanceState != null){
+            ActionBar bar= ((AppCompatActivity)getActivity()).getSupportActionBar();
 			if (savedInstanceState.containsKey(STATE_SELECTED_NAVIGATION_ITEM)) {
-				getActivity().getActionBar().setSelectedNavigationItem(
+                bar.setSelectedNavigationItem(
 						savedInstanceState.getInt(STATE_SELECTED_NAVIGATION_ITEM));
 			}
 		}
@@ -132,7 +135,8 @@ ActionBar.OnNavigationListener {
 	@Override
 	public void onSaveInstanceState(Bundle outState) {
 		// Serialize the current dropdown position.
-		outState.putInt(STATE_SELECTED_NAVIGATION_ITEM, getActivity().getActionBar()
+        ActionBar bar= ((AppCompatActivity)getActivity()).getSupportActionBar();
+		outState.putInt(STATE_SELECTED_NAVIGATION_ITEM, bar
 				.getSelectedNavigationIndex());
 		
         super.onSaveInstanceState(outState);
@@ -158,16 +162,17 @@ ActionBar.OnNavigationListener {
 	
 	@Override
 	  public void onResume() {
-		 
-		final ActionBar actionBar = getActivity().getActionBar();
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST); // montrer spinner
+        ActionBar bar= ((AppCompatActivity)getActivity()).getSupportActionBar();
+		if (bar != null)
+            bar.setNavigationMode(bar.NAVIGATION_MODE_LIST); // montrer spinner
 	    super.onResume();
 	  }
 
 	  @Override
 	  public void onPause() {
-		  final ActionBar actionBar = getActivity().getActionBar();
-			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD); // "cacher" spinner
+          ActionBar bar= ((AppCompatActivity)getActivity()).getSupportActionBar();
+		  if (bar != null)
+              bar.setNavigationMode(bar.NAVIGATION_MODE_STANDARD); // "cacher" spinner
 	    super.onPause();
 	  }
 	
@@ -186,7 +191,7 @@ ActionBar.OnNavigationListener {
 		 * Returns a new instance of this fragment for the given section number.
 		 */
 		public static PlaceholderFragment newInstance(int sectionNumber) {
-			PlaceholderFragment fragment = new PlaceholderFragment(sectionNumber);
+			PlaceholderFragment fragment = new PlaceholderFragment();
 			Bundle args = new Bundle();
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
 			fragment.setArguments(args);
@@ -196,9 +201,9 @@ ActionBar.OnNavigationListener {
 		public PlaceholderFragment() {
 			this.rang=1;
 		}
-		public PlaceholderFragment(int rang) {
-			this.rang=rang;
-		}
+		//public PlaceholderFragment(int rang) {
+		//	this.rang=rang;
+		//}
 
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -207,6 +212,10 @@ ActionBar.OnNavigationListener {
 					container, false);
 			TextView text  = (TextView) rootView.findViewById(R.id.enfin);
 			//http://www.vogella.com/tutorials/AndroidSQLite/article.html#databasetutorial_intro
+
+            Bundle args=  getArguments();
+            this.rang = args.getInt(ARG_SECTION_NUMBER,1);
+
 			text.setText("valeur="+MaterielContent.MATERIEL_TYPES.get(rang-1));
 			return rootView;
 		}

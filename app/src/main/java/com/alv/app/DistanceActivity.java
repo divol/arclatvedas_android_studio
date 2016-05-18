@@ -2,20 +2,22 @@ package com.alv.app;
 
 import com.alv.app.R;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 
-public class DistanceActivity extends FragmentActivity  {
+public class DistanceActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		final ActionBar actionBar = getActionBar();
-		actionBar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
+		final ActionBar actionbar = getSupportActionBar();
+		if(actionbar != null) {
+			actionbar.setDisplayHomeAsUpEnabled(true); // pour activer le retour Home
+		}
 		setContentView(R.layout.activity_distance);
 		if (savedInstanceState == null) {
 			

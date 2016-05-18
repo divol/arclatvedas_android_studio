@@ -19,7 +19,7 @@
         jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="0d7ee86c58ab4643468e187ae7ae4135b4794692">
+        sha1="4dc09d1eeb3237c2a7035a44302ca12df34e2abd">
         <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_4091bb448c8374806c1ab8c24f503cbbde062776.jar" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jar="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="3fa86d68a58eab8ff3d26050d921ee787f7972a4">
+        sha1="f050dd5c22d6198ee2920f27f57f5be137a1b702">
         <dex dex="/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/pre-dexed/debug/instant-run_a78bcae5bb7fb1b1ea2167c968a337fffc482b4b.jar" />
     </item>
     <item

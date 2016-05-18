@@ -7,10 +7,9 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-//import android.support.v4.view.WindowCompat;
 
 
+import android.support.v7.app.AppCompatActivity;
 
 
 /**
@@ -29,7 +28,7 @@ import android.support.v4.app.FragmentActivity;
  * {@link PageListFragment.Callbacks} interface
  * to listen for item selections.
  */
-public class PageListActivity extends FragmentActivity
+public class PageListActivity extends AppCompatActivity
         implements PageListFragment.Callbacks {
 
     /**
@@ -133,7 +132,7 @@ public class PageListActivity extends FragmentActivity
 		        }
     			break;
     			
-    		case 5: //Sélecteur de flèche
+    		case 5: //SÔøΩlecteur de flÔøΩche
     			
     			
 

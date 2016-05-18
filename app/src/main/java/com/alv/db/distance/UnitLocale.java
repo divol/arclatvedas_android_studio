@@ -6,7 +6,7 @@ import java.util.Locale;
 
 public class UnitLocale {
     public static UnitLocale Imperial = new UnitLocale("Yard");
-    public static UnitLocale Metric = new UnitLocale("mêtre");
+    public static UnitLocale Metric = new UnitLocale("m√™tre");
     
     private String unit;
     
