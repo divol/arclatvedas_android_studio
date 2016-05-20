@@ -2,9 +2,11 @@ package com.alv.app;
 
 import com.alv.app.R;
 import com.alv.app.spinchart.SpinCharteLoader;
+import com.google.android.gms.maps.MapFragment;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -29,7 +31,7 @@ import android.support.v7.app.AppCompatActivity;
  * to listen for item selections.
  */
 public class PageListActivity extends AppCompatActivity
-        implements PageListFragment.Callbacks {
+        implements PageListFragment.Callbacks,LieuxFragment.OnFragmentInteractionListener{
 
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
@@ -88,7 +90,7 @@ public class PageListActivity extends AppCompatActivity
     		case 1:
     		case 2:
     		case 3:
-    		case 9:
+    		case 10:
 	        if (mTwoPane) {
 	            // In two-pane mode, show the detail view in this activity by
 	            // adding or replacing the detail fragment using a
@@ -211,7 +213,7 @@ public class PageListActivity extends AppCompatActivity
 		            // In two-pane mode, show the detail view in this activity by
 		            // adding or replacing the detail fragment using a
 		            // fragment transaction.
-		           
+
     				TirGraphFragment frag = new TirGraphFragment();
 		            getSupportFragmentManager().beginTransaction()
 		                    .replace(R.id.page_detail_container, frag)
@@ -224,14 +226,37 @@ public class PageListActivity extends AppCompatActivity
 		            //detailIntent.putExtra(PageDetailFragment.ARG_ITEM_ID, id);
 		            startActivity(detailIntent);
 		        }
-    			
-    			
-    	        
 
+                break;
+            case 9:
+
+
+                if (mTwoPane) {
+                    // In two-pane mode, show the detail view in this activity by
+                    // adding or replacing the detail fragment using a
+                    // fragment transaction.
+
+                   LieuxFragment frag = new LieuxFragment();
+
+
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.page_detail_container, frag)
+                            .commit();
+
+                } else {
+                    // In single-pane mode, simply start the detail activity
+                    // for the selected item ID.
+                    Intent detailIntent = new Intent(this, LieuxActivity.class);
+                    //detailIntent.putExtra(PageDetailFragment.ARG_ITEM_ID, id);
+                    startActivity(detailIntent);
+                }
+                break;
     	}
     }
-    
-    
+
+    public void onFragmentInteraction(Uri uri){
+
+    }
     
     //TODO pas bon du tout
     private class BackgroundTask extends AsyncTask <Void, Void, Void> {

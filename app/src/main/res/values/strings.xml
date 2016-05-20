@@ -49,6 +49,8 @@
     <string name="size">Size: </string>
     <string name="strength">Strength: </string>
     <string name="lookup">lookup</string>
-    
+    <string name="lieux">Lieux</string>
+    <string name="title_activity_lieux">Lieux</string>
+
 
 </resources>
