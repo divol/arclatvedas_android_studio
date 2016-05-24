@@ -200,12 +200,12 @@
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_dark.png"
     },
     {
-        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_route_on_2_mono_dark.png",
-        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_2_mono_dark.png"
-    },
-    {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-hdpi/common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_route_on_2_mono_dark.png",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_2_mono_dark.png"
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/logoarclatvedas.png",
@@ -272,12 +272,12 @@
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/res/drawable-hdpi/cast_ic_notification_2.png"
     },
     {
-        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_plusone_tall_off_client.png",
-        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/res/drawable-hdpi/ic_plusone_tall_off_client.png"
-    },
-    {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_plusone_tall_off_client.png",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/res/drawable-hdpi/ic_plusone_tall_off_client.png"
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png",

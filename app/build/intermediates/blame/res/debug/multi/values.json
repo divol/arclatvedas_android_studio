@@ -5697,12 +5697,12 @@
                 "from": {
                     "file": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/debug/res/values/google_maps_api.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 769,
-                        "endLine": 19,
+                        "startOffset": 694,
+                        "endLine": 18,
                         "endColumn": 13,
-                        "endOffset": 916
+                        "endOffset": 841
                     }
                 }
             },

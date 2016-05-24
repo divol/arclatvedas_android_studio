@@ -141,7 +141,8 @@ public class VoleeEditFragment extends Fragment implements OnClickListener {
 
 		switch (view.getId()) {
 		case R.id.buttonRetour:
-			
+
+			//delegue.setTir(mParam1);
 			delegue.showPreviousFragment();
 
 			break;
@@ -260,6 +261,7 @@ public class VoleeEditFragment extends Fragment implements OnClickListener {
 		 delegue = (TirEditDialog)activity;
 		if (mParam1 == null) {
 			mParam1 = delegue.getTir();
+
 		}
 
 	}

@@ -45,7 +45,6 @@ public class TirEditDialog extends FragmentActivity{
 	public Tir getTir(){
 		return tir;
 	}
-	
 	public TirDataSource getdatasource(){
 		return datasource;
 	}

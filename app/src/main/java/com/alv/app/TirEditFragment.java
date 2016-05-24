@@ -35,8 +35,6 @@ public class TirEditFragment extends Fragment implements OnClickListener,OnItemS
 	 * 
 	 * @param param1
 	 *            Parameter 1.
-	 * @param param2
-	 *            Parameter 2.
 	 * @return A new instance of fragment ArrowEditFragment.
 	 */
 	// TODO: Rename and change types and number of parameters
@@ -134,7 +132,9 @@ public class TirEditFragment extends Fragment implements OnClickListener,OnItemS
 
 			 break;
 		 case R.id.okbutton:
-				 
+
+			    TirEditDialog parenta = (TirEditDialog) getActivity();
+
 		    	 EditText text = (EditText)baseview.findViewById(R.id.EditTextLocation);
 		    	 mParam1.setLocation(text.getText().toString());
 		    	 text = (EditText)baseview.findViewById(R.id.editTextDate);
@@ -146,10 +146,10 @@ public class TirEditFragment extends Fragment implements OnClickListener,OnItemS
 		    	 
 		    	 text = (EditText)baseview.findViewById(R.id.editTextComment);
 		    	 mParam1.setComment(text.getText().toString());
-		    	
-		    	 
+
+             mParam1.setScores(null); // pour ne pas ecraser, il y a un truc ... problme de synchro
 				 
-			 TirEditDialog parenta = (TirEditDialog) getActivity();
+
 			 parenta.goUp(Activity.RESULT_OK,mParam1);
 			 break;
 			 
@@ -175,6 +175,8 @@ public class TirEditFragment extends Fragment implements OnClickListener,OnItemS
 
 			 
 			 TirEditDialog parent1 = (TirEditDialog) getActivity();
+			// parent1.setTir(mParam1);
+
 			 parent1.showNextFragment();
 
 			 break;

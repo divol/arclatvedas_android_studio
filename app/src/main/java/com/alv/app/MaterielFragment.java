@@ -27,6 +27,7 @@ public class MaterielFragment  extends DataFragment<Materiel>  {
 	public void showEditDialog(Materiel data) {
         FragmentManager fm = this.getActivity().getSupportFragmentManager();
         MaterielEditFragment editNameDialog =  MaterielEditFragment.newInstance(data);
+		editNameDialog.myownparent=this;
         editNameDialog.setTargetFragment(this, 0);
         editNameDialog.show(fm, "fragment_edit_name");
     }

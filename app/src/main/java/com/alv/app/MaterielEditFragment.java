@@ -26,10 +26,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass. Activities that contain this fragment
- * must implement the {@link ArrowEditFragment.OnFragmentInteractionListener}
+ * must implement the {@link OnFragmentInteractionListener}
  * interface to handle interaction events. Use the
  * {@link MaterielEditFragment#newInstance} factory method to create an instance of
  * this fragment.
@@ -44,14 +45,16 @@ public class MaterielEditFragment extends DialogFragment implements OnClickListe
 	private Materiel mParam1;
     private View baseview;
     private ImageView mImageView;
+    private boolean isImageFitToScreen=false;
+
+
+	public android.support.v4.app.Fragment myownparent;
 	/**
 	 * Use this factory method to create a new instance of this fragment using
 	 * the provided parameters.
 	 * 
 	 * @param param1
 	 *            Parameter 1.
-	 * @param param2
-	 *            Parameter 2.
 	 * @return A new instance of fragment ArrowEditFragment.
 	 */
 	// TODO: Rename and change types and number of parameters
@@ -82,7 +85,7 @@ public class MaterielEditFragment extends DialogFragment implements OnClickListe
 		android.support.v4.app.Fragment fr = getTargetFragment();
 		
 		
-		System.out.println(fr.toString());
+	//	System.out.println(fr.toString());
 		
 		
 	    setTargetFragment(null, -1);
@@ -96,6 +99,23 @@ public class MaterielEditFragment extends DialogFragment implements OnClickListe
 		
 		 
 		 mImageView =(ImageView)baseview.findViewById(R.id.imageMateriel);
+/*
+        mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isImageFitToScreen) {
+                    isImageFitToScreen=false;
+                    mImageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                    mImageView.setAdjustViewBounds(true);
+                }else{
+                    isImageFitToScreen=true;
+                    mImageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+                    mImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                }
+            }
+        });
+
+*/
 
 		 Button b = (Button) baseview.findViewById(R.id.okbutton);
 	     b.setOnClickListener(this);
@@ -140,7 +160,7 @@ public class MaterielEditFragment extends DialogFragment implements OnClickListe
 		
 		 switch (view.getId()) {
 		 case R.id.okbutton:
-			 if (getTargetFragment() != null) {
+			 if (myownparent != null) {
 				 
 		    	 EditText text = (EditText)baseview.findViewById(R.id.EditTextName);
 		    	 mParam1.setName(text.getText().toString());
@@ -156,7 +176,7 @@ public class MaterielEditFragment extends DialogFragment implements OnClickListe
 		    	 mParam1.setComment(text.getText().toString());
 		    	 OnFragmentInteractionListener<Materiel> target; 
 		    	 
-		    	 target =   ((OnFragmentInteractionListener<Materiel>) getTargetFragment());
+		    	 target =   ((OnFragmentInteractionListener<Materiel>)myownparent);
 		    	
 		    	 target.onFragmentInteraction(mParam1);
 		    	 this.dismiss();

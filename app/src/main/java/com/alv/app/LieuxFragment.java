@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
@@ -31,6 +32,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 
+
+//http://stackoverflow.com/questions/14702621/answer-draw-path-between-two-points-using-google-maps-android-api-v2
+
+
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
@@ -43,10 +49,11 @@ import java.io.InputStreamReader;
 
     private GoogleMap mMap;
     private Context mContext;
-    private FollowMeLocationSource followMeLocationSource;
+   // private FollowMeLocationSource followMeLocationSource;
 
     private OnFragmentInteractionListener mListener;
-
+    private LatLng locationcourante;
+    private Polyline line;
     public LieuxFragment() {
         // Required empty public constructor
     }
@@ -87,10 +94,7 @@ import java.io.InputStreamReader;
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (savedInstanceState == null) {
-            followMeLocationSource = new FollowMeLocationSource();
-            //getMapAsync(this);
-        }
+        getMapAsync(this);
 
         if (getArguments() != null) {
         }
@@ -107,8 +111,17 @@ import java.io.InputStreamReader;
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
-        return false;
 
+        if (line != null)
+            mMap.clear();
+/*
+        line = mMap.addPolyline(new PolylineOptions()
+                .add(locationcourante, marker.getPosition())
+                .width(5)
+                .color(Color.BLUE));
+        return true;
+        */
+        return false;
     }
 
 
@@ -140,10 +153,12 @@ import java.io.InputStreamReader;
 
 /* We query for the best Location Provider everytime this fragment is displayed
          * just in case a better provider might have become available since we last displayed it */
-        followMeLocationSource.getBestAvailableProvider();
-
+        //followMeLocationSource.getBestAvailableProvider();
+        if (mMap != null) {
+            mMap.setMyLocationEnabled(true);
+        }
         // Get a reference to the map/GoogleMap object
-        setUpMapIfNeeded();
+        //setUpMapIfNeeded();
     }
 
     @Override
@@ -157,7 +172,7 @@ import java.io.InputStreamReader;
 
 
 
-
+/*
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
@@ -174,7 +189,7 @@ import java.io.InputStreamReader;
         }
     }
 
-
+*/
     @Override
     public void onMapReady(GoogleMap map) {
 
@@ -186,13 +201,13 @@ import java.io.InputStreamReader;
 */
 
 
-        //mMap = map;
+        mMap = map;
        // mMap.setLocationSource(followMeLocationSource);
-        //mMap.setMyLocationEnabled(true);
-       // mMap.setOnMarkerClickListener(this);
+        mMap.setMyLocationEnabled(true);
+        mMap.setOnMarkerClickListener(this);
 
 
-       // addLieuxToMap(map,this.getActivity().getApplicationContext());
+        addLieuxToMap(map,this.getActivity().getApplicationContext());
 
 
 
@@ -304,6 +319,189 @@ private static JSONArray parseLieuxJSON(Context context)
 
     }
 
+
+
+    /*
+    //pour construire une route
+
+    public String makeURL (double sourcelat, double sourcelog, double destlat, double destlog ){
+        StringBuilder urlString = new StringBuilder();
+        urlString.append("http://maps.googleapis.com/maps/api/directions/json");
+        urlString.append("?origin=");// from
+        urlString.append(Double.toString(sourcelat));
+        urlString.append(",");
+        urlString
+                .append(Double.toString( sourcelog));
+        urlString.append("&destination=");// to
+        urlString
+                .append(Double.toString( destlat));
+        urlString.append(",");
+        urlString.append(Double.toString( destlog));
+        urlString.append("&sensor=false&mode=driving&alternatives=true");
+        urlString.append("&key=AIzaSyDRmDobEXAPojzu17Clh97hjR677jyQnuc");
+        return urlString.toString();
+    }
+
+    private List<LatLng> decodePoly(String encoded) {
+
+        List<LatLng> poly = new ArrayList<LatLng>();
+        int index = 0, len = encoded.length();
+        int lat = 0, lng = 0;
+
+        while (index < len) {
+            int b, shift = 0, result = 0;
+            do {
+                b = encoded.charAt(index++) - 63;
+                result |= (b & 0x1f) << shift;
+                shift += 5;
+            } while (b >= 0x20);
+            int dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+            lat += dlat;
+
+            shift = 0;
+            result = 0;
+            do {
+                b = encoded.charAt(index++) - 63;
+                result |= (b & 0x1f) << shift;
+                shift += 5;
+            } while (b >= 0x20);
+            int dlng = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
+            lng += dlng;
+
+            LatLng p = new LatLng( (((double) lat / 1E5)),
+                    (((double) lng / 1E5) ));
+            poly.add(p);
+        }
+
+        return poly;
+    }
+
+    public void drawPath(String  result) {
+
+        try {
+            //Tranform the string into a json object
+            final JSONObject json = new JSONObject(result);
+            JSONArray routeArray = json.getJSONArray("routes");
+            JSONObject routes = routeArray.getJSONObject(0);
+            JSONObject overviewPolylines = routes.getJSONObject("overview_polyline");
+            String encodedString = overviewPolylines.getString("points");
+            List<LatLng> list = decodePoly(encodedString);
+            Polyline line = mMap.addPolyline(new PolylineOptions()
+                    .addAll(list)
+                    .width(12)
+                    .color(Color.parseColor("#05b1fb"))//Google maps blue color
+                    .geodesic(true)
+            );
+
+          // for(int z = 0; z<list.size()-1;z++){
+          //      LatLng src= list.get(z);
+           //     LatLng dest= list.get(z+1);
+           //     Polyline line = mMap.addPolyline(new PolylineOptions()
+           //     .add(new LatLng(src.latitude, src.longitude), new LatLng(dest.latitude,   dest.longitude))
+                .width(2)
+            //    .color(Color.BLUE).geodesic(true));
+          //  }
+
+        }
+        catch (JSONException e) {
+
+        }
+    }
+
+    private class connectAsyncTask extends AsyncTask<Void, Void, String>{
+        private ProgressDialog progressDialog;
+        String url;
+        connectAsyncTask(String urlPass){
+            url = urlPass;
+        }
+        @Override
+        protected void onPreExecute() {
+            // TODO Auto-generated method stub
+            super.onPreExecute();
+            progressDialog = new ProgressDialog(MainActivity.this);
+            progressDialog.setMessage("Fetching route, Please wait...");
+            progressDialog.setIndeterminate(true);
+            progressDialog.show();
+        }
+        @Override
+        protected String doInBackground(Void... params) {
+            JSONParser jParser = new JSONParser();
+            String json = jParser.getJSONFromUrl(url);
+            return json;
+        }
+        @Override
+        protected void onPostExecute(String result) {
+            super.onPostExecute(result);
+            progressDialog.hide();
+            if(result!=null){
+                drawPath(result);
+            }
+        }
+    }
+
+
+
+
+
+    public class MyOverlay extends Overlay {
+
+        private ArrayList all_geo_points;
+
+        public MyOverlay(ArrayList allGeoPoints) {
+            super();
+            this.all_geo_points = allGeoPoints;
+        }
+
+        @Override
+        public boolean draw(Canvas canvas, MapView mv, boolean shadow, long when) {
+            super.draw(canvas, mv, shadow);
+            drawPath(mv, canvas);
+            return true;
+        }
+
+        public void drawPath(MapView mv, Canvas canvas) {
+            int xPrev = -1, yPrev = -1, xNow = -1, yNow = -1;
+            Paint paint = new Paint();
+            paint.setColor(Color.BLUE);
+            paint.setStyle(Paint.Style.FILL_AND_STROKE);
+            paint.setStrokeWidth(4);
+            paint.setAlpha(100);
+            if (all_geo_points != null)
+                for (int i = 0; i < all_geo_points.size() - 4; i++) {
+                    GeoPoint gp = all_geo_points.get(i);
+                    Point point = new Point();
+                    mv.getProjection().toPixels(gp, point);
+                    xNow = point.x;
+                    yNow = point.y;
+                    if (xPrev != -1) {
+                        canvas.drawLine(xPrev, yPrev, xNow, yNow, paint);
+                    }
+                    xPrev = xNow;
+                    yPrev = yNow;
+                }
+        }
+    }
+
+
+
+
+    MapView mv = (MapView) findViewById(R.id.mvGoogle);
+    mv.setBuiltInZoomControls(true);
+    MapController mc = mv.getController();
+    ArrayList all_geo_points = getDirections(17.3849, 78.4866, 28.63491, 77.22461);
+    GeoPoint moveTo = all_geo_points.get(0);
+    mc.animateTo(moveTo);
+    mc.setZoom(12);
+    mv.getOverlays().add(new MyOverlay(all_geo_points));
+
+
+
+*/
+
+
+
+
+
     /* Our custom LocationSource.
   * We register this class to receive location updates from the Location Manager
   * and for that reason we need to also implement the LocationListener interface. */
@@ -350,6 +548,28 @@ private static JSONArray parseLieuxJSON(Context context)
             // Request location updates from Location Manager
             if (bestAvailableProvider != null) {
                 locationManager.requestLocationUpdates(bestAvailableProvider, minTime, minDistance, this);
+
+                Location location = locationManager.getLastKnownLocation(bestAvailableProvider);
+                if (location != null) {
+                    LatLng locationcourante = new LatLng(location.getLatitude(), location.getLongitude());
+
+                    if (mMap != null) {
+                        mMap.addMarker(new MarkerOptions()
+                                .title("")
+                                .snippet("")
+                                .position(locationcourante));
+                    }
+                }else{
+                     locationcourante = new LatLng(50.0, 50.0);
+
+                    if (mMap != null) {
+                        mMap.addMarker(new MarkerOptions()
+                                .title("test")
+                                .snippet("pas de gps")
+                                .position(locationcourante));
+                    }
+                }
+
             } else {
                 // (Display a message/dialog) No Location Providers currently available.
             }
@@ -376,12 +596,15 @@ private static JSONArray parseLieuxJSON(Context context)
             /* ..and Animate camera to center on that location !
              * (the reason for we created this custom Location Source !) */
             // mMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
-            LatLng ici = new LatLng(location.getLatitude(), location.getLongitude());
+             locationcourante = new LatLng(location.getLatitude(), location.getLongitude());
             if (mMap != null) {
                 mMap.addMarker(new MarkerOptions()
                         .title("")
                         .snippet("")
-                        .position(ici));
+                        .position(locationcourante));
+
+
+
             }
 
         }
