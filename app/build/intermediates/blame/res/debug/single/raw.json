@@ -5,11 +5,19 @@
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
-        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.1/res/raw/gtm_analytics"
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/ce3.alvgroupe",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/ce3.alvgroupe"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/bip.wav",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/bip.wav"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/bip3.wav",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/bip3.wav"
     },
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/charte.sql",
@@ -30,5 +38,9 @@
     {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/ce1.alvcharte",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/ce1.alvcharte"
+    },
+    {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/raw/bip2.wav",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/raw/bip2.wav"
     }
 ]

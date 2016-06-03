@@ -49,5 +49,10 @@
     <string name="size">Taille: </string>
     <string name="strength">Puissance: </string>
     <string name="lookup">Chercher</string>
-    
+    <string name="lieux">Lieux</string>
+    <string name="title_activity_lieux">Lieux</string>
+    <string name="distancearray">distancearray</string>
+    <string name="title_activity_chrono">Chrono</string>
+    <string name="chrono">Chrono</string>
+
 </resources>

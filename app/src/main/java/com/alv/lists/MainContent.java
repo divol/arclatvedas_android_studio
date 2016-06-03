@@ -38,6 +38,7 @@ public class MainContent {
     	String title_activity_tir = MyApplication.getContext().getResources().getString(R.string.title_activity_tir);
     	String graphic = MyApplication.getContext().getResources().getString(R.string.graphique);
         String lieux = MyApplication.getContext().getResources().getString(R.string.lieux);
+        String chrono = MyApplication.getContext().getResources().getString(R.string.chrono);
     	String about = MyApplication.getContext().getResources().getString(R.string.about);
 
     	
@@ -50,7 +51,8 @@ public class MainContent {
         addItem(new DummyItem("7", title_activity_tir,""));
         addItem(new DummyItem("8", graphic,""));
         addItem(new DummyItem("9", lieux,""));
-        addItem(new DummyItem("10", about,"http://arclatvedas.free.fr/index.php?option=com_content&view=article&id=20&tmpl=component"));
+        addItem(new DummyItem("10", chrono,""));
+        addItem(new DummyItem("11", about,"http://arclatvedas.free.fr/index.php?option=com_content&view=article&id=20&tmpl=component"));
     }
 
 

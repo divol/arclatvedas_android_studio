@@ -1,0 +1,51 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/fragcontainerChrono"
+tools:context="com.alv.app.ChronoActivityFragment">
+
+
+    <TextView
+        android:id="@+id/clock"
+        android:background="@drawable/rounded_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:text="240"
+        android:textColor="#feffffff"
+        android:textSize="60sp"
+        android:layout_margin="60dp"
+        android:padding="20dp"
+        android:textAlignment="center" />
+
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_gravity="start|top"
+        android:visibility="invisible" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:showText="true"
+        android:textOff="120"
+        android:textOn="240"
+        android:layout_gravity="center_horizontal|bottom"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Début"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="20dp"
+        android:id="@+id/startbutton" />
+
+</FrameLayout>

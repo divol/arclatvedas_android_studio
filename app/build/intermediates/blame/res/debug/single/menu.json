@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/menu/menu_chrono.xml",
+        "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/menu/menu_chrono.xml"
+    },
+    {
         "merged": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/build/intermediates/res/merged/debug/menu/materiel_global.xml",
         "source": "/Users/divol/Documents/AndroidStudio/arclatvedas_android/app/src/main/res/menu/materiel_global.xml"
     },

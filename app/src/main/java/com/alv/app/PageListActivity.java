@@ -90,7 +90,7 @@ public class PageListActivity extends AppCompatActivity
     		case 1:
     		case 2:
     		case 3:
-    		case 10:
+    		case 11:
 	        if (mTwoPane) {
 	            // In two-pane mode, show the detail view in this activity by
 	            // adding or replacing the detail fragment using a
@@ -231,26 +231,50 @@ public class PageListActivity extends AppCompatActivity
             case 9:
 
 
-                if (mTwoPane) {
-                    // In two-pane mode, show the detail view in this activity by
-                    // adding or replacing the detail fragment using a
-                    // fragment transaction.
+				if (mTwoPane) {
+					// In two-pane mode, show the detail view in this activity by
+					// adding or replacing the detail fragment using a
+					// fragment transaction.
 
-                   LieuxFragment frag = new LieuxFragment();
+					LieuxFragment frag = new LieuxFragment();
 
 
-                    getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.page_detail_container, frag)
-                            .commit();
+					getSupportFragmentManager().beginTransaction()
+							.replace(R.id.page_detail_container, frag)
+							.commit();
 
-                } else {
-                    // In single-pane mode, simply start the detail activity
-                    // for the selected item ID.
-                    Intent detailIntent = new Intent(this, LieuxActivity.class);
-                    //detailIntent.putExtra(PageDetailFragment.ARG_ITEM_ID, id);
-                    startActivity(detailIntent);
-                }
-                break;
+				} else {
+					// In single-pane mode, simply start the detail activity
+					// for the selected item ID.
+					Intent detailIntent = new Intent(this, LieuxActivity.class);
+					//detailIntent.putExtra(PageDetailFragment.ARG_ITEM_ID, id);
+					startActivity(detailIntent);
+				}
+				break;
+
+			case 10:
+
+
+				if (mTwoPane) {
+					// In two-pane mode, show the detail view in this activity by
+					// adding or replacing the detail fragment using a
+					// fragment transaction.
+
+					ChronoActivityFragment frag = new ChronoActivityFragment();
+
+
+					getSupportFragmentManager().beginTransaction()
+							.replace(R.id.page_detail_container, frag)
+							.commit();
+
+				} else {
+					// In single-pane mode, simply start the detail activity
+					// for the selected item ID.
+					Intent detailIntent = new Intent(this, ChronoActivity.class);
+					//detailIntent.putExtra(PageDetailFragment.ARG_ITEM_ID, id);
+					startActivity(detailIntent);
+				}
+				break;
     	}
     }
 
