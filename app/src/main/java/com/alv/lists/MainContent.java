@@ -1,5 +1,8 @@
  package com.alv.lists;
 
+import android.app.Application;
+import android.content.Context;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,7 +11,9 @@ import java.util.Map;
 import com.alv.app.MyApplication;
 import com.alv.app.R;
 
-/**
+import static com.alv.app.MyApplication.*;
+
+ /**
  * Helper class for providing sample content for user interfaces created by
  * Android template wizards.
  * <p>
@@ -25,10 +30,11 @@ public class MainContent {
      * A map of sample (dummy) items, by ID.
      */
     public static Map<String, DummyItem> MAIN_ITEM_MAP = new HashMap<String, DummyItem>();
-    
+
+
     static {
         // Add 3 sample items.
-    	
+        Context toto = MyApplication.getContext();
     	String informations = MyApplication.getContext().getResources().getString(R.string.informations);
     	String mandats = MyApplication.getContext().getResources().getString(R.string.mandats);
     	String photos = MyApplication.getContext().getResources().getString(R.string.photos);

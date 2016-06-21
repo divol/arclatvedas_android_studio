@@ -8,7 +8,7 @@ import android.content.Context;
 
 
 
-public class MyApplication extends Application {
+public class MyApplication extends android.support.multidex.MultiDexApplication {
 	private static Context mContext;
 
     @Override

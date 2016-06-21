@@ -6,9 +6,11 @@ import android.support.v4.app.ListFragment;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
+import java.util.ArrayList;
+import android.content.Context;
 
 import com.alv.lists.MainContent;
+import com.alv.lists.MainContent.DummyItem;
 
 /**
  * A list fragment representing a list of Pages. This fragment
@@ -67,11 +69,20 @@ public class PageListFragment extends ListFragment {
     public PageListFragment() {
     }
 
+
+     class itemAdapter extends ArrayAdapter<DummyItem> {
+
+         public itemAdapter(Context context) {
+             super(context, android.R.layout.simple_list_item_activated_1,android.R.id.text1,MainContent.MAIN_ITEMS);
+         }
+     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setListAdapter(new ArrayAdapter<MainContent.DummyItem>(
+       // setListAdapter(new itemAdapter(getActivity()));
+       setListAdapter(new ArrayAdapter<DummyItem>(
                 getActivity(),
                 android.R.layout.simple_list_item_activated_1,
                 android.R.id.text1,
