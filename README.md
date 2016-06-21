@@ -12,8 +12,9 @@ Simplement on peut :
 - aller voir les pages principales du site
 - lister son materiel
 - ajouter les reglages de viseur
-- ajouter les scores
-- mono orientation
+- ajouter les scores (plusieurs types de cible, et par tableau)
+- lieux du club (salle, terrain)
+- petit chrono
 
 voir aussi la version iOS, quasiment iso-fonctionnelle
 
