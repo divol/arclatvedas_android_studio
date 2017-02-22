@@ -18,9 +18,18 @@ Simplement on peut :
 
 voir aussi la version iOS, quasiment iso-fonctionnelle
 
+
 sur GooglePlay : https://play.google.com/store/apps/details?id=com.alv.app
 
 sur mon club : http://arclatvedas.free.fr
+
+
+
+Règles de confidentialité:
+l'ensemble des informations receuillies (position, photo, données) sont à l'usage exclusif de son utlisateur.
+Aucune donnée n'est transmise pour des traitements ou un usage externe.
+
+
 
 The MIT License (MIT)
 
