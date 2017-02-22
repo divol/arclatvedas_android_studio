@@ -25,13 +25,13 @@ sur mon club : http://arclatvedas.free.fr
 
 
 
-Règles de confidentialité:
+# Règles de confidentialité:
 l'ensemble des informations receuillies (position, photo, données) sont à l'usage exclusif de son utlisateur.
 Aucune donnée n'est transmise pour des traitements ou un usage externe.
 
 
 
-The MIT License (MIT)
+# The MIT License (MIT)
 
 Copyright (c) [2015] [jacques divol]
 
