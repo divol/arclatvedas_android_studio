@@ -26,7 +26,7 @@ sur mon club : http://arclatvedas.free.fr
 
 
 # Règles de confidentialité:
-l'ensemble des informations receuillies (position, photo, données) sont à l'usage exclusif de son utlisateur.
+L'ensemble des informations receuillies (position, photo, données) sont à l'usage exclusif de son utlisateur.
 Aucune donnée n'est transmise pour des traitements ou un usage externe.
 
 
